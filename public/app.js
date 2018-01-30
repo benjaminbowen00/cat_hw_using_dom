@@ -59,7 +59,8 @@ var createFoodItem = function(food){
 
 var createPicItem = function(url){
   let catPic = createCatImageFromURL(url);
-  return document.createElement("li").appendChild(catPic);
+  let catItem = document.createElement("li").appendChild(catPic);
+  return catItem;
 }
 
 var createUnorderedListofThreeItems = function(name, food, url){
@@ -71,11 +72,14 @@ var createUnorderedListofThreeItems = function(name, food, url){
   //   item.innerText = thing;
   //   unorderedList.appendChild(item);
   // })
+
+  // var item = document.createElement("li");
+  // item.appendChild(createPicItem(url));
   unorderedList.appendChild(createNameItem(name));
-  unorderedList.appendChild(createFoodItem(food))
-
+  unorderedList.appendChild(createFoodItem(food));
   unorderedList.appendChild(createPicItem(url));
-
+  // unorderedList.appendChild(item);
+  
   return unorderedList;
 }
 

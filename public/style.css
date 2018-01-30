@@ -6,3 +6,30 @@
 .red-quote{
   color: red;
 }
+
+
+ul {
+    background: #cce6ff;
+    padding: 20px;
+    margin: auto;
+
+
+
+}
+
+
+ul li {
+    background: #e6f3ff;
+    margin: 5px;
+    width: auto;
+
+}
+
+img {
+
+}
+
+#cats{
+  width: 700px;
+  margin: auto;
+}
